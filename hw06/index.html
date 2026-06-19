@@ -153,7 +153,9 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次的作業是嘗試使用文字來生成出影片，使用的工具跟上次作業使用的工具相同，是個人使用功能最齊全的工具ConfyUI，
+      也使用到了Civitai上面開源的模型，由節點拖曳與模組串接的邏輯，搭建專屬工作流來生成影片，
+      非常的有趣，也能理解到模型的工作流程，最後也成功生成出影片。
     </div>
   </div>
 
@@ -169,22 +171,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,13 +197,44 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">
+      <figcaption>Comfy UI 環境設定完成</figcaption>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint: based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">LoRA:  chibi-laugh</a><br>  
+      <img src="1.png"  width="100%"><br>
+    </div>
+  </div>
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 1</figcaption>
+      <img src="2.png"  width="100%"><br>
     </div>
   </div>
 
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 1</figcaption>
+      <img src="3.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" :"early morning, pajamas, messy hair, sunrise light, holding a mug",
+          "10" :"early morning, pajamas, messy hair, sunrise light, holding a mug",
+          "20" :"early morning, pajamas, messy hair, sunrise light, holding a mug",
+          "30" :"sunny afternoon, casual t-shirt, denim shorts, sunglasses, bright sunlight",
+          "40" :"sunny afternoon, casual t-shirt, denim shorts, sunglasses, bright sunlight",
+          "50" :"sunny afternoon, casual t-shirt, denim shorts, sunglasses, bright sunlight",
+          "60" :"golden hour, trench coat, long scarf, sunset glow, blowing wind",
+          "70" :"golden hour, trench coat, long scarf, sunset glow, blowing wind",
+          "80" :"golden hour, trench coat, long scarf, sunset glow, blowing wind",
+          "90" :"midnight, cyberpunk jacket, neon lights, rainy street, reflections",
+          "100" :"midnight, cyberpunk jacket, neon lights, rainy street, reflections",
+          "110" :"midnight, cyberpunk jacket, neon lights, rainy street, reflections"
+      </td>
+    </div>
+
+  </div>
+  <!-- ------------------------------------------------>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
